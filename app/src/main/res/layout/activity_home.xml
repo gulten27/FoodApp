@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F0F6"
+    tools:context=".home.HomeActivity">
+
+    <Button
+        android:id="@+id/recipe"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/custom_button2"
+        android:drawableTop="@drawable/ic_baseline_food_bank_24"
+        android:onClick="recipe"
+        android:text="recıpe"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/group"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="191dp"
+        android:background="@drawable/custom_button2"
+        android:drawableTop="@drawable/ic_baseline_people_alt_24"
+        android:onClick="group"
+        android:text="group"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipe" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/custom_button2"
+        android:text="exıt"
+        android:textColor="@color/white"
+        app:icon="@drawable/ic_baseline_exit_to_app_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/group" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

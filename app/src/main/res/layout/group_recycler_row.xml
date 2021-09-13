@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="#F8F0F6">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerEmailText"
+        android:text="User Email"
+        android:textSize="20sp"
+        android:layout_margin="5dp"
+        android:textColor="#9A000000"
+        android:textStyle="bold">
+    </TextView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/recyclerImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        app:civ_border_color="#FFBB86FC"
+        app:civ_border_width="3dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/recyclerRecipeNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Recipe Name"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="#72000000"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/recyclerRecipeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="Recipe"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:textColor="#72000000">
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/cbHeart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="36dp"
+        android:button="@drawable/selector_wishlist_item"
+        app:layout_constraintStart_toStartOf="@+id/btn_show"
+        app:layout_constraintTop_toBottomOf="@+id/btn_show"
+        app:useMaterialThemeColors="false"></CheckBox>
+
+</LinearLayout>
